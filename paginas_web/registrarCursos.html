@@ -1,0 +1,104 @@
+
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<title>Registrar Cursos</title>
+<!--Incorporando Favicon-->
+<link rel="shortcut icon" type="image/x-icon" href="images\iconPage.ico">
+</head>
+
+<body>
+	<header>
+		<img src="images\Logo.png" alt="">
+			<div>
+				<img src="images\Banner.png" alt="">
+				<h1>Universidad de las Tecnologias TIC</h1>
+				<nav>				
+					<ul><!--Lista de vinculos de navegacion rapida a lo largo de la pagina-->
+							<li><a href="index.html">Inicio</a> | </li>
+							<li><a href="contacto.html">Contactenos | </a></li>
+							<li><a href="loginPage.html"><b>Log in</b></a></li>
+					</ul>				
+				</nav>
+			</div>	
+	</header>
+
+    <aside>
+        <h2>Menú</h2>
+        <a href="informacionPersonal.html">Información Personal</a>
+        <a href="registrarCursos">Registrar Cursos</a>
+        <a href="verCursos">Ver mis Cursos</a>
+        <a href="index.html">Log Out</a>
+    </aside>
+	
+	<section>
+		<h2>Registar Cursos</h2>
+        <form action="">
+            <br>
+            <label for="buscar"><b>Buscar</b></label>
+            <input type="text" name="buscar" id="buscar" required>  
+
+            <div>
+				<input type="submit" value="Buscar" onclick="return buscar()">
+			</div>
+        </form>
+
+        <h1>Cursos disponibles</h1>
+
+
+        <table>
+            <tr>
+                <td><strong>Código</strong></td>
+                <td><strong>Asignatura</strong></td>
+                <td><strong>Docente</strong></td>
+                <td><strong>Crd</strong></td>
+                <td><strong>Seleccionar</strong></td>
+
+            </tr>
+
+            <tr>
+                <td>15507</td>
+                <td>Macro Economía</td>
+                <td>Nestor Garcia</td>
+                <td>2</td>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                    <label for="vehicle1"></label>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>15508</td>
+                <td>Estadística</td>
+                <td>Aytell Ramos</td>
+                <td>2</td>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                    <label for="vehicle1"></label>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>15509</td>
+                <td>Finazas 1</td>
+                <td>Andrew Echavarria</td>
+                <td>2</td>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                    <label for="vehicle1"></label>
+                </td>
+
+            </tr>
+        </table>
+
+        <div>
+            <input type="submit" value="Matricular" onclick="return matricular()">
+        </div>
+	</section>
+	
+	<footer>
+		<img src="images\Banner.png" alt="Pie de pagina">
+	</footer>
+</body>
