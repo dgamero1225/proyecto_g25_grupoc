@@ -14,27 +14,27 @@ body {
 	font-size: 16px;
 }
 h1 {
-	font-size: 4.8rem;
+	font-size: 4.6rem;
 }
 h2 {
-	font-size: 4.0rem;
+	font-size: 3.8rem;
 }
 h3 {
-	font-size: 3.2rem;
+	font-size: 3.0rem;
 }
 h4 {
-	font-size: 2.8rem;
+	font-size: 2.6rem;
 }
 p {
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 }
 a {
-	font-size: 2.8rem;
+	font-size: 2.0rem;
 }
 /** Header **/
 .contenedorHeader {
 	background-image: url(/images/banner.jpeg);
-	height: 40rem;
+	height: 500px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -64,15 +64,76 @@ a {
 	grid-column: 1 / 3;
 }
 .contenedorHeader__navegacion{
-	text-align: right;
+	display: flex;
+	justify-content:space-evenly;
+	margin-top: 30px;
+	
 }
 .contenedorHeader__navegacion a {
 
 	color: white;
+	text-decoration: none;
 }
 
-/** Body **/
+/** Main **/
 
+.mainTitulo {
+	width: max-content;
+	margin: 100px auto;
+	
+}
+.contenedorMain {
+	max-width: 80%;
+	margin: 60px auto;
+	
+}
+.contenedorMain__superior {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 2rem;
+}
+.contenedorMain__superior h3 {
+	text-align: center;
+	margin: 40px 0;
+}
+.contenedorMain__superior p {
+	margin: 30px 0;
+}
+.contenedorMain__superior img {
+	width: 100%;
+	margin: auto;
+	height: 700px;
+}
+.cursos {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 2rem;
+}
+.cursos__titulo {
+	grid-column: 1 / 3;
+}
+
+/** Footer **/
+.contenedorFooter {
+	background-image: url(/images/banner.jpeg);
+	height: 150px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+
+}
+.contenedorFooter__banner{
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: 100%;
+}
+.navegacion-footer a{
+	color: white;
+	text-decoration: none;
+	
+}
 
 
 </style>
@@ -101,17 +162,11 @@ a {
 		</div>	
 	</header>
 
-	<div class="ensayo-imagen">
+	<main class="contenedorMain">
 
-	</div>
-
-
-
-	<main>
-
-		<section>
-			<h2>Razones para aprender sobre tecnologia</h2>
-			<section>
+		
+			<h2 class="mainTitulo">Razones para aprender sobre tecnologia</h2>
+			<section class="contenedorMain__superior">
 				<div>
 					<h3>Necesidad  Mundial</h3>
 					<p>Aliquam quis lorem vel odio maximus sagittis sit amet sit amet velit. Vivamus urna risus, rutrum non diam sit amet, rutrum feugiat magna. Ut quis nibh nec nisl luctus tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ut justo ac leo dignissim iaculis. Aliquam tincidunt ipsum non sapien volutpat, a fermentum felis pellentesque. Integer maximus, lectus non interdum iaculis, neque quam ultrices lacus, ut tempus sem turpis a lorem. Etiam posuere mauris eu turpis suscipit fermentum. Duis dictum sem ac malesuada lacinia. Suspendisse vulputate nec metus ac ullamcorper.</p>
@@ -129,36 +184,38 @@ a {
 				</div>
 			</section>
 			
-			<section>
-			<h2>Nuestros Cursos</h2>
-			<section>
-				<div>
-					<h3>Python</h3>
-					<p>Aliquam quis lorem vel odio maximus sagittis sit amet sit amet velit. Vivamus urna risus, rutrum non diam sit amet, rutrum feugiat magna. Ut quis nibh nec nisl luctus tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ut justo ac leo dignissim iaculis. Aliquam tincidunt ipsum non sapien volutpat, a fermentum felis pellentesque. Integer maximus, lectus non interdum iaculis, neque quam ultrices lacus, ut tempus sem turpis a lorem. Etiam posuere mauris eu turpis suscipit fermentum. Duis dictum sem ac malesuada lacinia. Suspendisse vulputate nec metus ac ullamcorper.</p>
-					<img src="images\HomeS2D1.png" alt="Joven programando">
+			<section >
+			<h2 class="mainTitulo">Nuestros Cursos</h2>
+			<section class="contenedorMain__inferior">
+				<div class="cursos">
+					<h3 class="cursos__titulo">Python</h3>
+					<p class="cursos__texto">Aliquam quis lorem vel odio maximus sagittis sit amet sit amet velit. Vivamus urna risus, rutrum non diam sit amet, rutrum feugiat magna. Ut quis nibh nec nisl luctus tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ut justo ac leo dignissim iaculis. Aliquam tincidunt ipsum non sapien volutpat, a fermentum felis pellentesque. Integer maximus, lectus non interdum iaculis, neque quam ultrices lacus, ut tempus sem turpis a lorem. Etiam posuere mauris eu turpis suscipit fermentum. Duis dictum sem ac malesuada lacinia. Suspendisse vulputate nec metus ac ullamcorper.</p>
+					<img class="curso__img" src="images\HomeS2D1.png" alt="Joven programando">
 				</div>
-				<div>
-					<h3>Java</h3>			
+				<div class="cursos">
+					<h3 class="cursos__titulo">Java</h3>			
 					<img src="images\HomeS2D2.png" alt="Codificacion Java">
 					<p>Aliquam quis lorem vel odio maximus sagittis sit amet sit amet velit. Vivamus urna risus, rutrum non diam sit amet, rutrum feugiat magna. Ut quis nibh nec nisl luctus tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ut justo ac leo dignissim iaculis. Aliquam tincidunt ipsum non sapien volutpat, a fermentum felis pellentesque. Integer maximus, lectus non interdum iaculis, neque quam ultrices lacus, ut tempus sem turpis a lorem. Etiam posuere mauris eu turpis suscipit fermentum. Duis dictum sem ac malesuada lacinia. Suspendisse vulputate nec metus ac ullamcorper.</p>
 				</div>
-				<div>
-					<h3>Diseño Web</h3>
+				<div class="cursos">
+					<h3 class="cursos__titulo">Diseño Web</h3>
 					<p>Aliquam quis lorem vel odio maximus sagittis sit amet sit amet velit. Vivamus urna risus, rutrum non diam sit amet, rutrum feugiat magna. Ut quis nibh nec nisl luctus tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ut justo ac leo dignissim iaculis. Aliquam tincidunt ipsum non sapien volutpat, a fermentum felis pellentesque. Integer maximus, lectus non interdum iaculis, neque quam ultrices lacus, ut tempus sem turpis a lorem. Etiam posuere mauris eu turpis suscipit fermentum. Duis dictum sem ac malesuada lacinia. Suspendisse vulputate nec metus ac ullamcorper.</p>
 					<img src="images\HomeS2D3.png" alt="Esquema de ideas">
 				</div>
-			</section>
+			
 
 	</main>
 	
 	<footer>
-		<img src="images\Banner.png" alt="Pie de pagina">
-		<nav>				
-			<ul><!--Lista de vinculos de navegacion rapida a lo largo de la pagina-->
-					<li><a href="index.html"><b>Inicio</b></a> | </li>
-					<li><a href="">Contactenos | </a></li>
-					<li><a href="loginPage.html">Log in</a></li>
-			</ul>				
-		</nav>
+		<!-- <img src="images\Banner.png" alt="Pie de pagina"> -->
+		<div class="contenedorFooter">
+			<div class="contenedorFooter__banner">
+				<nav class="navegacion-footer">	
+					<a href="index.html">Inicio</a>
+					<a href="contacto.html">Contactanos</a>
+					<a href="loginPAge.html">Log in</a>	
+				</nav>
+			</div>
+		</div>
 	</footer>
 </body>
