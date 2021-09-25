@@ -1,147 +1,191 @@
 <!doctype html>
+
 <head>
-<meta charset="utf-8">
-<title>Home</title>
-<!--Incorporando Favicon-->
-<link rel="shortcut icon" type="image/x-icon" href="images\iconPage.ico">
-<style>
-html * {
-	margin: 0;
-	padding: 0;
-	font-size: 62.5%; /* esto se hace para que 1rem = 10px*/
-}
-body {
-	font-size: 16px;
-}
-h1 {
-	font-size: 4.6rem;
-}
-h2 {
-	font-size: 3.8rem;
-}
-h3 {
-	font-size: 3.0rem;
-}
-h4 {
-	font-size: 2.6rem;
-}
-p {
-	font-size: 1.8rem;
-}
-a {
-	font-size: 2.0rem;
-}
-/** Header **/
-.contenedorHeader {
-	background-image: url(/images/banner.jpeg);
-	height: 500px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	position: relative;
+	<meta charset="utf-8">
+	<title>Home</title>
+	<!--Incorporando Favicon-->
+	<link rel="shortcut icon" type="image/x-icon" href="images\iconPage.ico">
+	<style>
+		html * {
+			margin: 0;
+			padding: 0;
+			font-size: 62.5%;
+			/* esto se hace para que 1rem = 10px*/
+		}
 
-}
-.contenedorHeader__imgLogo {
-	height: 20rem;
-	width: 20rem;
-}
-.contenedorHeader__banner{
-	position: absolute;
-	background-color: rgba(0, 0, 0, 0.7);
-	width: 100%;
-	height: 100%;
-}
+		body {
+			max-width: 1920px;
+			font-size: 16px;
+		}
 
-.contenedorHeader__banner h1{
-	color: white;
-	text-align: center;
-} 
-.contenedorHeader__contenido {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
-.contenedorHeader__contenido h1 {
-	grid-column: 1 / 3;
-}
-.contenedorHeader__navegacion{
-	display: flex;
-	justify-content:space-evenly;
-	margin-top: 30px;
-	
-}
-.contenedorHeader__navegacion a {
+		h1 {
+			font-size: 4.0rem;
+		}
 
-	color: white;
-	text-decoration: none;
-}
+		h2 {
+			font-size: 3.4rem;
+		}
 
-/** Main **/
+		h3 {
+			font-size: 2.6rem;
+		}
 
-.mainTitulo {
-	width: max-content;
-	margin: 100px auto;
-	
-}
-.contenedorMain {
-	max-width: 80%;
-	margin: 60px auto;
-	
-}
-.contenedorMain__superior {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	column-gap: 2rem;
-}
-.contenedorMain__superior h3 {
-	text-align: center;
-	margin: 40px 0;
-}
-.contenedorMain__superior p {
-	margin: 30px 0;
-}
-.contenedorMain__superior img {
-	width: 100%;
-	margin: auto;
-	height: 700px;
-}
-.cursos {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	column-gap: 2rem;
-}
-.cursos__titulo {
-	grid-column: 1 / 3;
-}
+		h4 {
+			font-size: 2.0rem;
+		}
 
-/** Footer **/
-.contenedorFooter {
-	background-image: url(/images/banner.jpeg);
-	height: 150px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	position: relative;
+		p {
+			font-size: 1.8rem;
+		}
 
-}
-.contenedorFooter__banner{
-	position: absolute;
-	background-color: rgba(0, 0, 0, 0.7);
-	width: 100%;
-	height: 100%;
-}
-.navegacion-footer a{
-	color: white;
-	text-decoration: none;
-	
-}
+		a {
+			font-size: 2.0rem;
+		}
+
+		/** Header **/
+		.contenedorHeader {
+			
+			background-image: url(/images/banner.jpeg);
+			height: 500px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			position: relative;
+
+		}
+
+		.contenedorHeader__imgLogo {
+			height: 20rem;
+			width: 20rem;
+		}
+
+		.contenedorHeader__banner {
+			position: absolute;
+			background-color: rgba(0, 0, 0, 0.7);
+			width: 100%;
+			height: 100%;
+		}
+
+		.contenedorHeader__banner h1 {
+			color: white;
+			text-align: center;
+		}
+
+		.contenedorHeader__contenido {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		.contenedorHeader__contenido h1 {
+			grid-column: 1 / 3;
+		}
+
+		.contenedorHeader__navegacion {
+			display: flex;
+			justify-content: space-evenly;
+			margin-top: 30px;
+
+		}
+
+		.contenedorHeader__navegacion a {
+
+			color: white;
+			text-decoration: none;
+		}
+
+		/** Main **/
+
+		.mainTitulo {
+			width: max-content;
+			margin: 100px auto;
+
+		}
+
+		.contenedorMain {
+			max-width: 80%;
+			margin: 60px auto;
+
+		}
+
+		.contenedorMain__superior {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			column-gap: 2rem;
+		}
+
+		.contenedorMain__superior h3 {
+			text-align: center;
+			margin: 40px 0;
+		}
+
+		.contenedorMain__superior p {
+			margin: 30px 0;
+		}
+
+		.contenedorMain__superior img {
+			width: 100%;
+			margin: auto;
+			height: 700px;
+		}
+		.contenedorMain__img {
+			max-height: 400px;
+		}
+		.contenedorMain__inferior {
+			width: 100%;
+			margin: 0 auto;
+		}
+		.cursos {
+			display: grid;
+			grid-template-columns: 50% 50%;
+			column-gap: 2rem;
+			margin-top: 50px;
+		}
+
+		.cursos__titulo {
+			grid-column: 1 / 3;
+			text-align: center;
+			background-color:#E5E0DC;
+			margin-bottom: 20px;
+			padding: 10px 0;
+		}
+		.curso__img {
+			width:100%;
+			height: 400px;
+		}
 
 
-</style>
+		/** Footer **/
+		.contenedorFooter {
+			margin-top: 150px;
+			background-image: url(/images/banner.jpeg);
+			height: 150px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			position: relative;
+
+		}
+
+		.contenedorFooter__banner {
+			position: absolute;
+			background-color: rgba(0, 0, 0, 0.7);
+			width: 100%;
+			height: 100%;
+		}
+
+		.navegacion-footer a {
+			color: white;
+			text-decoration: none;
+
+
+		}
+	</style>
 
 
 
 </head>
 <!-- esta pagina la esta trabajando Emiliano Duque -->
+
 <body>
 
 	<header class="contenedorHeader">
@@ -150,70 +194,97 @@ a {
 			<div class="contenedorHeader__contenido">
 				<img class="contenedorHeader__imgLogo" src="images/Logo.png" alt="">
 
-				<nav class="contenedorHeader__navegacion">	
+				<nav class="contenedorHeader__navegacion">
 					<a href="index.html">Inicio</a>
 					<a href="contacto.html">Contactanos</a>
-					<a href="loginPAge.html">Log in</a>	
+					<a href="loginPAge.html">Log in</a>
 				</nav>
-	
+
 				<h1>Universidad de las Tecnologias TIC</h1>
 			</div>
 
-		</div>	
+		</div>
 	</header>
 
 	<main class="contenedorMain">
 
-		
-			<h2 class="mainTitulo">Razones para aprender sobre tecnologia</h2>
-			<section class="contenedorMain__superior">
-				<div>
-					<h3>Necesidad  Mundial</h3>
-					<p>Aliquam quis lorem vel odio maximus sagittis sit amet sit amet velit. Vivamus urna risus, rutrum non diam sit amet, rutrum feugiat magna. Ut quis nibh nec nisl luctus tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ut justo ac leo dignissim iaculis. Aliquam tincidunt ipsum non sapien volutpat, a fermentum felis pellentesque. Integer maximus, lectus non interdum iaculis, neque quam ultrices lacus, ut tempus sem turpis a lorem. Etiam posuere mauris eu turpis suscipit fermentum. Duis dictum sem ac malesuada lacinia. Suspendisse vulputate nec metus ac ullamcorper.</p>
-					<img src="images\HomeS1D1.png" alt="Computadoras">
-				</div>
-				<div>
-					<h3>Oportunidades laborales</h3>
-					<p>Aliquam quis lorem vel odio maximus sagittis sit amet sit amet velit. Vivamus urna risus, rutrum non diam sit amet, rutrum feugiat magna. Ut quis nibh nec nisl luctus tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ut justo ac leo dignissim iaculis. Aliquam tincidunt ipsum non sapien volutpat, a fermentum felis pellentesque. Integer maximus, lectus non interdum iaculis, neque quam ultrices lacus, ut tempus sem turpis a lorem. Etiam posuere mauris eu turpis suscipit fermentum. Duis dictum sem ac malesuada lacinia. Suspendisse vulputate nec metus ac ullamcorper.</p>
-					<img src="images\HomeS1D2.png" alt="Jovenes">
-				</div>
-				<div>
-					<h3>Desarrollo personal</h3>
-					<p>Aliquam quis lorem vel odio maximus sagittis sit amet sit amet velit. Vivamus urna risus, rutrum non diam sit amet, rutrum feugiat magna. Ut quis nibh nec nisl luctus tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ut justo ac leo dignissim iaculis. Aliquam tincidunt ipsum non sapien volutpat, a fermentum felis pellentesque. Integer maximus, lectus non interdum iaculis, neque quam ultrices lacus, ut tempus sem turpis a lorem. Etiam posuere mauris eu turpis suscipit fermentum. Duis dictum sem ac malesuada lacinia. Suspendisse vulputate nec metus ac ullamcorper.</p>
-					<img src="images\HomeS1D3.png" alt="Desarrollo">
-				</div>
-			</section>
-			
-			<section >
-			<h2 class="mainTitulo">Nuestros Cursos</h2>
-			<section class="contenedorMain__inferior">
-				<div class="cursos">
-					<h3 class="cursos__titulo">Python</h3>
-					<p class="cursos__texto">Aliquam quis lorem vel odio maximus sagittis sit amet sit amet velit. Vivamus urna risus, rutrum non diam sit amet, rutrum feugiat magna. Ut quis nibh nec nisl luctus tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ut justo ac leo dignissim iaculis. Aliquam tincidunt ipsum non sapien volutpat, a fermentum felis pellentesque. Integer maximus, lectus non interdum iaculis, neque quam ultrices lacus, ut tempus sem turpis a lorem. Etiam posuere mauris eu turpis suscipit fermentum. Duis dictum sem ac malesuada lacinia. Suspendisse vulputate nec metus ac ullamcorper.</p>
-					<img class="curso__img" src="images\HomeS2D1.png" alt="Joven programando">
-				</div>
-				<div class="cursos">
-					<h3 class="cursos__titulo">Java</h3>			
-					<img src="images\HomeS2D2.png" alt="Codificacion Java">
-					<p>Aliquam quis lorem vel odio maximus sagittis sit amet sit amet velit. Vivamus urna risus, rutrum non diam sit amet, rutrum feugiat magna. Ut quis nibh nec nisl luctus tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ut justo ac leo dignissim iaculis. Aliquam tincidunt ipsum non sapien volutpat, a fermentum felis pellentesque. Integer maximus, lectus non interdum iaculis, neque quam ultrices lacus, ut tempus sem turpis a lorem. Etiam posuere mauris eu turpis suscipit fermentum. Duis dictum sem ac malesuada lacinia. Suspendisse vulputate nec metus ac ullamcorper.</p>
-				</div>
-				<div class="cursos">
-					<h3 class="cursos__titulo">Diseño Web</h3>
-					<p>Aliquam quis lorem vel odio maximus sagittis sit amet sit amet velit. Vivamus urna risus, rutrum non diam sit amet, rutrum feugiat magna. Ut quis nibh nec nisl luctus tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ut justo ac leo dignissim iaculis. Aliquam tincidunt ipsum non sapien volutpat, a fermentum felis pellentesque. Integer maximus, lectus non interdum iaculis, neque quam ultrices lacus, ut tempus sem turpis a lorem. Etiam posuere mauris eu turpis suscipit fermentum. Duis dictum sem ac malesuada lacinia. Suspendisse vulputate nec metus ac ullamcorper.</p>
-					<img src="images\HomeS2D3.png" alt="Esquema de ideas">
-				</div>
-			
 
+		<h2 class="mainTitulo">Razones para aprender sobre tecnologia</h2>
+		<section class="contenedorMain__superior">
+			<div >
+				<h3>Necesidad Mundial</h3>
+				<p>Aliquam quis lorem vel odio maximus sagittis sit amet sit amet velit. Vivamus urna risus, rutrum non
+					diam sit amet, rutrum feugiat magna. Ut quis nibh nec nisl luctus tristique. Interdum et malesuada
+					fames ac ante ipsum primis in faucibus. Sed ut justo ac leo dignissim iaculis. Aliquam tincidunt
+					ipsum non sapien volutpat, a fermentum felis pellentesque.</p>
+				<img class="contenedorMain__img" src="images/img-1.jpeg" alt="Computadoras">
+			</div>
+			<div>
+				<h3>Oportunidades laborales</h3>
+				<p>Aliquam quis lorem vel odio maximus sagittis sit amet sit amet velit. Vivamus urna risus, rutrum non
+					diam sit amet, rutrum feugiat magna. Ut quis nibh nec nisl luctus tristique. Interdum et malesuada
+					fames ac ante ipsum primis in faucibus. Sed ut justo ac leo dignissim iaculis. Aliquam tincidunt
+					ipsum non sapien volutpat, a fermentum felis pellentesque.</p>
+				<img class="contenedorMain__img" src="images/img-2.jpeg" alt="Jovenes">
+			</div>
+			<div>
+				<h3>Desarrollo personal</h3>
+				<p>Aliquam quis lorem vel odio maximus sagittis sit amet sit amet velit. Vivamus urna risus, rutrum non
+					diam sit amet, rutrum feugiat magna. Ut quis nibh nec nisl luctus tristique. Interdum et malesuada
+					fames ac ante ipsum primis in faucibus. Sed ut justo ac leo dignissim iaculis. Aliquam tincidunt
+					ipsum non sapien volutpat, a fermentum felis pellentesque.</p>
+				<img class="contenedorMain__img" src="images/img-3.jpeg" alt="Desarrollo">
+			</div>
+		</section>
+
+		<section class="contenedorMain__inferior">
+		<h2 class="mainTitulo">Nuestros Cursos</h2>
+
+		<div class="cursos">
+			<h3 class="cursos__titulo">Python</h3>
+			<p class="cursos__texto">Aliquam quis lorem vel odio maximus sagittis sit amet sit amet velit.
+				Vivamus urna risus, rutrum non diam sit amet, rutrum feugiat magna. Ut quis nibh nec nisl luctus
+				tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ut justo ac leo
+				dignissim iaculis. Aliquam tincidunt ipsum non sapien volutpat, a fermentum felis pellentesque.
+				Integer maximus, lectus non interdum iaculis, neque quam ultrices lacus, ut tempus sem turpis a
+				lorem. Etiam posuere mauris eu turpis suscipit fermentum. Duis dictum sem ac malesuada lacinia.
+				Suspendisse vulputate nec metus ac ullamcorper.</p>
+			<img class="curso__img" src="images/img-4.jpeg" alt="Joven programando">
+		</div>
+		<div class="cursos">
+			<h3 class="cursos__titulo">Java</h3>
+			<img class="curso__img" src="images/img-5.jpeg" alt="Codificacion Java">
+			<p>Aliquam quis lorem vel odio maximus sagittis sit amet sit amet velit. Vivamus urna risus, rutrum
+				non diam sit amet, rutrum feugiat magna. Ut quis nibh nec nisl luctus tristique. Interdum et
+				malesuada fames ac ante ipsum primis in faucibus. Sed ut justo ac leo dignissim iaculis. Aliquam
+				tincidunt ipsum non sapien volutpat, a fermentum felis pellentesque. Integer maximus, lectus non
+				interdum iaculis, neque quam ultrices lacus, ut tempus sem turpis a lorem. Etiam posuere mauris
+				eu turpis suscipit fermentum. Duis dictum sem ac malesuada lacinia. Suspendisse vulputate nec
+				metus ac ullamcorper.</p>
+		</div>
+		<div class="cursos">
+			<h3 class="cursos__titulo">Diseño Web</h3>
+			<p>Aliquam quis lorem vel odio maximus sagittis sit amet sit amet velit. Vivamus urna risus, rutrum
+				non diam sit amet, rutrum feugiat magna. Ut quis nibh nec nisl luctus tristique. Interdum et
+				malesuada fames ac ante ipsum primis in faucibus. Sed ut justo ac leo dignissim iaculis. Aliquam
+				tincidunt ipsum non sapien volutpat, a fermentum felis pellentesque. Integer maximus, lectus non
+				interdum iaculis, neque quam ultrices lacus, ut tempus sem turpis a lorem. Etiam posuere mauris
+				eu turpis suscipit fermentum. Duis dictum sem ac malesuada lacinia. Suspendisse vulputate nec
+				metus ac ullamcorper.</p>
+			<img class="curso__img" src="images/img-6.jpeg" alt="Esquema de ideas">
+		</div>
+
+		</section>
 	</main>
-	
+
 	<footer>
 		<!-- <img src="images\Banner.png" alt="Pie de pagina"> -->
 		<div class="contenedorFooter">
 			<div class="contenedorFooter__banner">
-				<nav class="navegacion-footer">	
+				<nav class="navegacion-footer">
 					<a href="index.html">Inicio</a>
 					<a href="contacto.html">Contactanos</a>
-					<a href="loginPAge.html">Log in</a>	
+					<a href="loginPAge.html">Log in</a>
 				</nav>
 			</div>
 		</div>
