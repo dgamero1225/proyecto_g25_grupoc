@@ -14,49 +14,49 @@
 		}
 
 		body {
-			max-width: 1920px;
+			max-width: 1140px;
 			font-size: 16px;
 		}
 
 		h1 {
-			font-size: 4.0rem;
+			font-size: 3.0rem;
 		}
 
 		h2 {
-			font-size: 3.4rem;
+			font-size: 2.4rem;
 		}
 
 		h3 {
-			font-size: 2.6rem;
-		}
-
-		h4 {
-			font-size: 2.0rem;
-		}
-
-		p {
 			font-size: 1.8rem;
 		}
 
+		h4 {
+			font-size: 1.2rem;
+		}
+
+		p {
+			font-size: 1.1rem;
+		}
+
 		a {
-			font-size: 2.0rem;
+			font-size: 1.8rem;
 		}
 
 		/** Header **/
 		.contenedorHeader {
 			
 			background-image: url(/images/banner.jpeg);
-			height: 320px;
+			height: 280px;
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center center;
 			display: grid;
-			grid-template-columns: 320px 1600px;
+			grid-template-columns: 280px 860px;
 		}
 
 		.contenedorHeader__imgLogo {
-			height: 320px;
-			width: 320px;
+			height: 280px;
+			width: 280px;
 		}
 
 		.contenedorHeader__banner {
@@ -71,7 +71,7 @@
 		}
 		.contenedorHeader__banner h1 {
 			text-align: center;
-			margin-top: 150px;
+			margin-top: 120px;
 			color: white;
 			
 		}
@@ -94,13 +94,13 @@
 
 		.mainTitulo {
 			width: max-content;
-			margin: 100px auto;
+			margin: 30px auto;
 
 		}
 
 		.contenedorMain {
 			max-width: 80%;
-			margin: 60px auto;
+			margin: 0 auto;
 
 		}
 
@@ -112,7 +112,7 @@
 
 		.contenedorMain__superior h3 {
 			text-align: center;
-			margin: 40px 0;
+			margin: 20px 0;
 		}
 
 		.contenedorMain__superior p {
@@ -125,7 +125,7 @@
 			height: 700px;
 		}
 		.contenedorMain__img {
-			max-height: 400px;
+			max-height: 280px;
 		}
 		.contenedorMain__inferior {
 			width: 100%;
@@ -147,15 +147,15 @@
 		}
 		.curso__img {
 			width:100%;
-			height: 400px;
+			height: 220px;
 		}
 
 
 		/** Footer **/
 		.contenedorFooter {
-			margin-top: 150px;
+			margin-top: 80px;
 			background-image: url(/images/banner.jpeg);
-			height: 150px;
+			height: 100px;
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center center;
@@ -168,14 +168,16 @@
 			background-color: rgba(0, 0, 0, 0.7);
 			width: 100%;
 			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content:right;
 			
 		}
 		.navegacion-footer {
 			display: flex;
 			gap: 2rem;
-			justify-content: end;
-			margin-top: 75px;
-			margin-right: 50px;		}
+			padding-right: 2rem;
+		}
 		.navegacion-footer a {
 			
 			color: white;
@@ -221,7 +223,7 @@
 				<img class="contenedorMain__img" src="images/img-1.jpeg" alt="Computadoras">
 			</div>
 			<div>
-				<h3>Oportunidades laborales</h3>
+				<h3>Oportunidades</h3>
 				<p>Aliquam quis lorem vel odio maximus sagittis sit amet sit amet velit. Vivamus urna risus, rutrum non
 					diam sit amet, rutrum feugiat magna. Ut quis nibh nec nisl luctus tristique. Interdum et malesuada
 					fames ac ante ipsum primis in faucibus. Sed ut justo ac leo dignissim iaculis. Aliquam tincidunt
@@ -250,6 +252,7 @@
 				Integer maximus, lectus non interdum iaculis, neque quam ultrices lacus, ut tempus sem turpis a
 				lorem. Etiam posuere mauris eu turpis suscipit fermentum. Duis dictum sem ac malesuada lacinia.
 				Suspendisse vulputate nec metus ac ullamcorper.</p>
+				
 			<img class="curso__img" src="images/img-4.jpeg" alt="Joven programando">
 		</div>
 		<div class="cursos">
