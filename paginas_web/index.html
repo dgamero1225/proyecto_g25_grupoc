@@ -46,49 +46,46 @@
 		.contenedorHeader {
 			
 			background-image: url(/images/banner.jpeg);
-			height: 500px;
+			height: 320px;
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center center;
-			position: relative;
-
+			display: grid;
+			grid-template-columns: 320px 1600px;
 		}
 
 		.contenedorHeader__imgLogo {
-			height: 20rem;
-			width: 20rem;
+			height: 320px;
+			width: 320px;
 		}
 
 		.contenedorHeader__banner {
+
+			position: relative;
+		}
+		.contenedorHeader__filtro {
 			position: absolute;
 			background-color: rgba(0, 0, 0, 0.7);
 			width: 100%;
 			height: 100%;
 		}
-
 		.contenedorHeader__banner h1 {
-			color: white;
 			text-align: center;
+			margin-top: 150px;
+			color: white;
+			
 		}
-
-		.contenedorHeader__contenido {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-		}
-
-		.contenedorHeader__contenido h1 {
-			grid-column: 1 / 3;
-		}
-
 		.contenedorHeader__navegacion {
 			display: flex;
-			justify-content: space-evenly;
-			margin-top: 30px;
-
+			gap: 2rem;
+			justify-content: right;
+			margin-top: 50px;
+			margin-right: 50px;
+			
+			
 		}
-
 		.contenedorHeader__navegacion a {
-
+			
 			color: white;
 			text-decoration: none;
 		}
@@ -158,28 +155,27 @@
 		.contenedorFooter {
 			margin-top: 150px;
 			background-image: url(/images/banner.jpeg);
-			height: 100px;
+			height: 150px;
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center center;
 			position: relative;
 
 		}
-
+		
 		.contenedorFooter__banner {
 			position: absolute;
 			background-color: rgba(0, 0, 0, 0.7);
 			width: 100%;
 			height: 100%;
-			display: grid;
-			grid-template-columns: 1fr 1fr;
+			
 		}
 		.navegacion-footer {
-			grid-column: 2 / 3;
 			display: flex;
-			justify-content:space-evenly;
-			align-items: center;
-		}
+			gap: 2rem;
+			justify-content: end;
+			margin-top: 75px;
+			margin-right: 50px;		}
 		.navegacion-footer a {
 			
 			color: white;
@@ -195,17 +191,16 @@
 <body>
 
 	<header class="contenedorHeader">
-
+		<img class="contenedorHeader__imgLogo" src="images/Logo.png" alt="">
 		<div class="contenedorHeader__banner">
-			<div class="contenedorHeader__contenido">
-				<img class="contenedorHeader__imgLogo" src="images/Logo.png" alt="">
-
+			<div class="contenedorHeader__filtro">
+				
 				<nav class="contenedorHeader__navegacion">
 					<a href="index.html">Inicio</a>
 					<a href="contacto.html">Contactanos</a>
 					<a href="loginPAge.html">Log in</a>
 				</nav>
-
+	
 				<h1>Universidad de las Tecnologias TIC</h1>
 			</div>
 

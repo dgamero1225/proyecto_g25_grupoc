@@ -49,10 +49,8 @@
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center center;
-			
 			display: grid;
 			grid-template-columns: 320px 1600px;
-
 		}
 
 		.contenedorHeader__imgLogo {
@@ -61,22 +59,31 @@
 		}
 
 		.contenedorHeader__banner {
+
 			position: relative;
+		}
+		.contenedorHeader__filtro {
+			position: absolute;
 			background-color: rgba(0, 0, 0, 0.7);
 			width: 100%;
 			height: 100%;
 		}
-
 		.contenedorHeader__banner h1 {
+			margin-top: 150px;
 			color: white;
-			text-align: center;
+			text-align:center;
 		}
-
-		.contenedorHeader__contenido {
-			position: absolute;
-
+		.contenedorHeader__navegacion {
+			display: flex;
+			gap: 2rem;
+			justify-content: right;
+			margin-top: 50px;
+			margin-right: 50px;
+			
+			
 		}
 		.contenedorHeader__navegacion a {
+			
 			color: white;
 			text-decoration: none;
 		}
@@ -98,7 +105,19 @@
 			padding: 2rem;
 			border-radius: 1rem;
 		}
+		.boton__ingresar {
+			background-color:#E5E0DC;
+			text-decoration: none;
+			color: #206A64;
+			font-weight: bold;
+			text-transform: uppercase;
+			padding: 1rem;
+			margin-top: 200px;
+			margin-left: 200px;
 
+			
+
+		}
 
 
 
@@ -113,19 +132,20 @@
 			position: relative;
 
 		}
-
+		
 		.contenedorFooter__banner {
 			position: absolute;
 			background-color: rgba(0, 0, 0, 0.7);
 			width: 100%;
 			height: 100%;
-			display: grid;
-			grid-template-columns: 1fr 1fr;
+			
 		}
 		.navegacion-footer {
-			grid-column: 2 / 3;
-			align-items: flex-end;
-		}
+			display: flex;
+			gap: 2rem;
+			justify-content: end;
+			margin-top: 75px;
+			margin-right: 50px;		}
 		.navegacion-footer a {
 			
 			color: white;
@@ -138,13 +158,17 @@
 	<header class="contenedorHeader">
 		<img class="contenedorHeader__imgLogo" src="images/Logo.png" alt="">
 		<div class="contenedorHeader__banner">
-			<nav class="contenedorHeader__navegacion">
-				<a href="index.html">Inicio</a>
-				<a href="contacto.html">Contactanos</a>
-				<a href="loginPAge.html">Log in</a>
-			</nav>
+			<div class="contenedorHeader__filtro">
+				
+				<nav class="contenedorHeader__navegacion">
+					<a href="index.html">Inicio</a>
+					<a href="contacto.html">Contactanos</a>
+					<a href="loginPAge.html">Log in</a>
+				</nav>
+	
+				<h1>Universidad de las Tecnologias TIC</h1>
+			</div>
 
-			<h1>Universidad de las Tecnologias TIC</h1>
 		</div>
 	</header>
 	
@@ -154,15 +178,16 @@
 
 			<div>
 				<label class="formulario__label" for="EntradaUsuario">Usuario</label>
-				<input type="text" name="EntradaUsuario" id="EntradaUsuario" required>
+				<input type="text" placeholder="Entra tu nombre" name="EntradaUsuario" id="EntradaUsuario" required>
 				<br>
 				<label class="formulario__label" for="EntradaContraseña"><b>Contraseña</b></label>
-				<input type="password" placeholder="********" name="EntradaContraseña" id="EntradaContraseña" required>
+				<input type="password" placeholder="Entra tu password" name="EntradaContraseña" id="EntradaContraseña" required>
 			</div>
-			<div>
-				<input type="submit" value="Enviar" onclick="return EnviarForm()">
-			</div>
+
 		</form>
+		
+			<a class="boton__ingresar" href="#">Ingresar</a>
+		
 	</section>
 	
 	<footer>
