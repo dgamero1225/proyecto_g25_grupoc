@@ -1,0 +1,317 @@
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: left;
+  width: 1024px;
+  height: auto;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 2.03rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h5 {
+	font-size: 1.3rem;
+	margin: 0;
+	font-weight: 700;
+}
+
+header {
+	position: relative;	
+	width: 100%;
+	height: 205px;
+}
+
+	header img {
+		display: inline-block;
+		width: 20%;
+		height: 100%;
+	}
+
+	header div {
+		display: inline-block;		
+		width: 79.55%; /*Colocarle 80% genera que no haya suficiente espacio en linea como para que ambos elementos se mantengan al tiempo en la misma, sino que el segundo (banner), salte a la linea de abajo*/
+		height: 100%;
+		color: #FFFFFF;
+		background-image: url(../images/Banner.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+		header h1 {
+			position: absolute;
+			margin: 0;
+			top: 70%;
+			left: 30%;
+			text-align: right;
+		}
+
+		header nav {
+			position: absolute;
+			left: 78%;
+			font-weight: 400;
+		}
+		
+			header nav ul li {
+				display: inline;
+			}
+			
+				header nav ul li a:hover {								
+					text-decoration: none;
+					text-shadow:
+						0 0 5px #fff,
+						0 0 7px #fff,
+						0 0 13px #fff;
+				}
+			
+			header nav a:link {				
+				color: #FFFFFF;
+				text-decoration: none;
+			}
+			
+			header nav a:visited {				
+				color: #FFFFFF;
+				text-decoration: none;
+			}
+			
+.mainWrapper {
+	position: relative;/*Para posicionar <section> y <aside> con absolute; A raiz de un error, aun incomprendido, con la propiedad relative, errores descritos como el traslado de las cajas <aside> y <section> generando espacios blancos*/
+	height: 700px;
+	width: 100%;
+}
+
+	aside {
+		position: absolute;
+		width: 28.22%;
+		height: 100%;
+		background-color: #C4C4C4;
+	}
+
+		aside h2 {
+			position: relative;
+			background-color: #E5E0DC;
+			color: #000000;
+			margin: 0;
+			padding: 35px 0 15px;
+			text-align: center;		
+		}		
+		
+		aside h3 {
+			position: relative;
+			border-bottom: 1px solid #000;
+			margin: 0;
+			padding: 15px 0 0 10px;
+			text-align: left;		
+		}
+		
+			aside h3 a:link {				
+				color: #142727;
+				text-decoration: none;
+			}
+				
+			aside h3 a:visited {
+				color: #142727;
+				text-decoration: none;
+			}
+
+	section {
+		position: absolute;
+		left: 28.22%;
+		width: 71.78%;
+		height: 100%;
+		background-color: #FFFFFF;
+	}
+
+		section h2 {
+			margin: 0;
+			text-align: center;
+			color: #02AB9D;
+			padding: 60px 0 15px;
+		}		
+
+		#infPerWrapper {
+			background-color: #E5E0DC;
+			border-radius: 10px;
+			color: #000000;
+			width: 80%;
+			padding: 40px 5%;
+			margin: 0 5%;
+		}
+		
+			.infPerRow {
+				width: 100%;
+				height: 3.5rem;		
+				display: block;
+			}		
+			
+				#entradaNombre {			
+					float: left;
+					width: 26.1%;
+					height: 100%;
+					margin: 0 4% 0 0;			
+				}
+				
+				#entradaApellidos {
+					float: left;
+					width: 26.1%;
+					height: 100%;
+					margin: 0 4% 0 0;			
+				}
+				
+				#documento {
+					float: left;
+					width: 27%;
+					height: 100%;
+					margin: 0 4% 0 0;			
+				}
+				
+					#datWrapperTD {
+						width: 18%;
+						height: 1.5rem;
+						background-color: #FFFFFF;
+						border-radius: 5px;
+						display: inline-block;
+					}
+				
+					#datWrapperND {
+						width: 78%;
+						height: 1.5rem;
+						background-color: #FFFFFF;
+						border-radius: 5px;				
+						display: inline-block;				
+					}
+				
+				#fechaNacimiento {
+					float: left;
+					width: 41.6%;
+					height: 100%;
+					margin: 0 4% 0 0;			
+				}
+				
+				#edad {
+					float: left;
+					width: 10%;
+					height: 100%;
+					margin: 0 4% 0 0;			
+				}
+				
+				#sexo {
+					float: left;
+					width: 14.3%;
+					height: 100%;
+					margin: 0 4% 0 0;			
+				}
+				
+				#estado {
+					float: left;
+					width: 14.3%;
+					height: 100%;
+					margin: 0 4% 0 0;			
+				}
+				
+				#direccion {
+					float: left;
+					width: 39.8%;
+					height: 100%;
+					margin: 0 4% 0 0;			
+				}
+				
+				#municipio {
+					float: left;
+					width: 22.8%;
+					height: 100%;
+					margin: 0 4% 0 0;			
+				}
+				
+				#barrio {
+					float: left;
+					width: 22.8%;
+					height: 100%;
+					margin: 0 4% 0 0;			
+				}
+				
+				#telefono {
+					float: left;
+					width: 19.8%;
+					height: 100%;
+					margin: 0 4% 0 0;			
+				}
+				
+				#entradaEmail {
+					float: left;
+					width: 27%;
+					height: 100%;
+					margin: 0 4% 0 0;			
+				}
+				
+				#programa {
+					float: left;
+					width: 26%;
+					height: 100%;
+					margin: 0 4% 0 0;			
+				}
+				
+				#semestre {
+					float: left;
+					width: 11%;
+					height: 100%;
+					margin: 0 4% 0 0;			
+				}
+				
+					.datWrapper {
+						width: 100%;
+						height: 1.5rem;
+						background-color: #FFFFFF;
+						border-radius: 5px;
+					}
+		
+		section input {
+			text-align: center;
+			color: #02AB9D;
+			font-weight: 700;
+			font-size: 1rem;
+			margin: 60px 45% 20px;
+			border-radius: 2.5px;
+			
+		}
+
+footer {
+	width: 100%;
+	height: 110px;
+	background-image: url(../images/Banner.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+/*
+Default Propertys Elements: https://www.w3schools.com/cssref/css_default_values.asp
+
+Pendiente:
+	Posible aplicacion de diseño grid
+		- https://www.youtube.com/watch?v=T4t00Hd3qZc&ab_channel=YoelvisMulen%7Bcode%7D
+		- https://www.youtube.com/watch?v=QBOUSrMqlSQ&t=4s&ab_channel=FaztCode
+	Posible aplicacion del atributo flex, en lugar de inline, block e inline-block
+		- https://www.youtube.com/watch?v=8JC-XyCSys4&t=344s&ab_channel=SoyDalto
+		- https://www.youtube.com/watch?v=rJp3IWsk_os&ab_channel=JonathanLifschitz
+*/

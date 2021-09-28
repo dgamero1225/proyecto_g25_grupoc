@@ -5,94 +5,139 @@
 <title>Informacion Estudiante</title>
 <!--Incorporando Favicon-->
 <link rel="shortcut icon" type="image/x-icon" href="images\iconPage.ico">
+<!--Incorporacion CSS-->
+<link href="css/infoEstudiante.css" rel="stylesheet" type="text/css">
+<!--Importando font-family (Estilo de letra) a la pagina, desde google-->
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 
 <body>
 	<header>
 		<img src="images\Logo.png" alt="">
-			<div>
-				<img src="images\Banner.png" alt="">
-				<h1>Universidad de las Tecnologias TIC</h1>
-				<nav>				
-					<ul><!--Lista de vinculos de navegacion rapida a lo largo de la pagina-->
-							<li><a href="index.html">Inicio</a> | </li>
-							<li><a href="contacto.html">Contactenos | </a></li>
-							<li><a href="loginPage.html"><b>Log in</b></a></li>
-					</ul>				
-				</nav>
-			</div>	
+		<div>
+			<!--<img src="images\Banner.png" alt="">-->
+			<h1>Universidad de las Tecnologias TIC</h1>
+			<nav>				
+				<ul><!--Lista de vinculos de navegacion rapida a lo largo de la pagina-->
+					<li><a href="contacto.html">Contactenos</a> | </li>
+					<li><a href="index.html">Log out</a></li>
+				</ul>				
+			</nav>
+		</div>	
 	</header>
-
-    <aside>
-        <h2>Menú</h2>
-        <a href="informacionPersonal.html">Información Personal</a>
-        <a href="registrarCursos">Registrar Cursos</a>
-        <a href="verCursos">Ver mis Cursos</a>
-        <a href="index.html">Log Out</a>
-    </aside>
 	
-	<section>
-		<h2>Información General</h2>
-		<form>
-			<div>
-				<label for="nombre"><b>Nombre</b></label>
-				<input type="text" name="nombre" id="EntradaNombre" required>
-				<br>
-				<label for="apellidos"><b>Apellidos</b></label>
-				<input type="text" name="apellidos" id="EntradaApellidos" required>
-                <br>
-
-                <label for="tipodocumento">Tipo Documento</label>
-                <select name="cedula" id="cedula">
-                    <option value="cc">C.C.</option>
-                    <option value="ti">T.I.</option>
-                    <option value="ce">C.E.</option>
-                </select>
-				<label for="numeroDocumento"><b># Documento</b></label>
-				<input type="number" name="numeroDocumento" id="numeroDocumento" required>
-                <br>
-				<label for="fechaNacimiento"><b>Fecha de Nacimiento</b></label>
-				<input type="date" name="fechaNacimiento" id="fechaNacimiento" required>
-                <br>
-				<label for="edad"><b>Edad</b></label>
-				<input type="number" name="edad" id="edad" required> 
-                <br>
-				<label for="sexo"><b>Sexo</b></label>
-				<input type="text" name="sexo" id="sexo" required>    
-                <br>
-				<label for="estado"><b>Estado</b></label>
-				<input type="text" name="estado" id="estado" required>       
-                <br>
-				<label for="direccion"><b>Dirección</b></label>
-				<input type="text" name="direccion" id="direccion" required>  
-                <br>
-				<label for="municipio"><b>Municipio</b></label>
-				<input type="text" name="municipio" id="municipio" required>   
-                <br>
-				<label for="barrio"><b>Barrio</b></label>
-				<input type="text" name="barrio" id="barrio" required> 
-                <br>
-				<label for="telefono"><b>Telefono</b></label>
-				<input type="number" name="telefono" id="telefono" required> 
-				<br>
-				<label for="email"><b>Email</b></label>
-				<input type="email" name="email" id="EntradaEmail" required>
-                <br>
-				<label for="programa"><b>Programa</b></label>
-				<input type="text" name="programa" id="programa" required> 
-                <br>
-				<label for="semestre"><b>Semstre</b></label>
-				<input type="text" name="semestre" id="semestre" required> 
-                
-			</div>
-            <div>
+	<div class="mainWrapper">
+		<aside>
+			<h2>Menú</h2>
+			<h3><a href="informacionPersonal.html">Información Personal</a></h3>
+			<h3><a href="registrarCursos">Registrar Cursos</a></h3>
+			<h3><a href="verCursos">Ver mis Cursos</a></h3>
+		</aside>
+		
+		<section>
+			<h2>Información General</h2>
+			<form>
+				<div id="infPerWrapper">
+					<div class="infPerRow">
+						<div id="entradaNombre">
+							<h5>Nombre(s)</h5>
+							<div class="datWrapper">
+							</div>
+						</div>
+						
+						<div id="entradaApellidos">
+							<h5>Apellidos</h5>
+							<div class="datWrapper">
+							</div>
+						</div>
+												
+						<div id="documento">
+							<h5>Documento</h5>
+							<div id="datWrapperTD">
+							</div>
+							<div id="datWrapperND">
+							</div>
+						</div>
+					</div>
+					
+					<div class="infPerRow">
+						<div id="fechaNacimiento">
+							<h5>Fecha de Nacimiento</h5>
+							<div class="datWrapper">
+							</div>
+						</div>
+						
+						<div id="edad">
+							<h5>Edad</h5>
+							<div class="datWrapper">
+							</div>
+						</div>
+												
+						<div id="sexo">
+							<h5>Sexo</h5>
+							<div class="datWrapper">
+							</div>
+						</div>
+						
+						<div id="estado">
+							<h5>Estado</h5>
+							<div class="datWrapper">
+							</div>
+						</div>
+					</div>
+					
+					<div class="infPerRow">
+						<div id="direccion">
+							<h5>Dirección</h5>
+							<div class="datWrapper">
+							</div>
+						</div>
+						
+						<div id="municipio">
+							<h5>Municipio</h5>
+							<div class="datWrapper">
+							</div>
+						</div>
+												
+						<div id="barrio">
+							<h5>Barrio</h5>
+							<div class="datWrapper">
+							</div>
+						</div>
+					</div>
+					
+					<div class="infPerRow">
+						<div id="telefono">
+							<h5>Telefono</h5>
+							<div class="datWrapper">
+							</div>
+						</div>
+						
+						<div id="entradaEmail">
+							<h5>Email</h5>
+							<div class="datWrapper">
+							</div>
+						</div>
+												
+						<div id="programa">
+							<h5>Programa</h5>
+							<div class="datWrapper">
+							</div>
+						</div>
+						
+						<div id="semestre">
+							<h5>Sem</h5>
+							<div class="datWrapper">
+							</div>
+						</div>						
+					</div>
+				</div>
+				
 				<input type="submit" value="Modificar" onclick="return EnviarInfoEstudiante()">
-			</div>
-
-		</form>
-	</section>
+			</form>
+		</section>
+	</div>
 	
 	<footer>
-		<img src="images\Banner.png" alt="Pie de pagina">
 	</footer>
 </body>
