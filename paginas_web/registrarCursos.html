@@ -3,102 +3,127 @@
 <head>
 <meta charset="utf-8">
 <title>Registrar Cursos</title>
-<!--Incorporando Favicon-->
-<link rel="shortcut icon" type="image/x-icon" href="images\iconPage.ico">
+
+<link href="css/registrarCur.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
-	<header>
-		<img src="images\Logo.png" alt="">
-			<div>
-				<img src="images\Banner.png" alt="">
-				<h1>Universidad de las Tecnologias TIC</h1>
-				<nav>				
-					<ul><!--Lista de vinculos de navegacion rapida a lo largo de la pagina-->
-							<li><a href="index.html">Inicio</a> | </li>
-							<li><a href="contacto.html">Contactenos | </a></li>
-							<li><a href="loginPage.html"><b>Log in</b></a></li>
-					</ul>				
-				</nav>
-			</div>	
-	</header>
+	<header class="contenedorHeader">
+        <img class="contenedorHeader__imgLogo" src="images/Logo.png" alt="">
+        <div class="contenedorHeader__banner">
+            <div class="contenedorHeader__filtro">
+                
+                <nav class="contenedorHeader__navegacion">
+                    
+                    <a href="loginPAge.html">Log out</a>
+                </nav>
+    
+                <h1 id="titulo">Universidad de las Tecnologias TIC</h1>
+            </div>
 
-    <aside>
+        </div>
+    </header>
+
+    
+    <aside class="menu__lateral">
         <h2>Menú</h2>
-        <a href="informacionPersonal.html">Información Personal</a>
-        <a href="registrarCursos">Registrar Cursos</a>
-        <a href="verCursos">Ver mis Cursos</a>
-        <a href="index.html">Log Out</a>
+        <ul>
+            <li><a href="informacionPersonal.html">Información Personal</a></li>
+            <li><a href="registrarCursos">Registrar Cursos</a></li>
+            <li><a href="verCursos">Ver mis Cursos</a></li>
+        </ul>
+
+        <a class="log_barraLat" href="index.html">Log Out</a>
     </aside>
 	
-	<section>
-		<h2>Registar Cursos</h2>
-        <form action="">
-            <br>
-            <label for="buscar"><b>Buscar</b></label>
-            <input type="text" name="buscar" id="buscar" required>  
+	<div class="contenedor__contenido">
+        <h3>REGISTRAR CURSOS</h3>
+        <div class="buscador">
+            <form action="">
+                <br>
+                <label for="buscar"><p>Buscar curso</p></label>
+                <p><input type="text" name="buscar" id="buscar" required></p> 
 
-            <div>
-				<input type="submit" value="Buscar" onclick="return buscar()">
-			</div>
-        </form>
+                <div>
+    				<p><input type="submit" value="Buscar" onclick="return buscar()"></p> 
+    			</div>
+            </form>
+        </div>
 
-        <h1>Cursos disponibles</h1>
+        
+        <div class="cursos_disp">
+            <h3>Cursos disponibles</h3>
 
+            <table>
+                <tr>
+                    <h3>
+                    <td><strong><p>CODIGO</p></strong></td>
+                    <td><strong><p>ASIGNATURA</p></strong></td>
+                    <td><strong><p>DOCENTE</p></strong></td>
+                    <td><strong><p>CRD</p></strong></td>
+                    <td><strong><p>SELECCIONAR</p></strong></td>
 
-        <table>
-            <tr>
-                <td><strong>Código</strong></td>
-                <td><strong>Asignatura</strong></td>
-                <td><strong>Docente</strong></td>
-                <td><strong>Crd</strong></td>
-                <td><strong>Seleccionar</strong></td>
+                </tr>
 
-            </tr>
+                <tr>
+                    <td><p>15507</p></td>
+                    <td><p>Macro Economía</p></td>
+                    <td><p>Nestor Garcia</p></td>
+                    <td><p>2</p></td>
+                    <td><p>
+                        <input type="checkbox" id="" name="" value="">
+                        <label for="vehicle1"></label>
+                    </p></td>
 
-            <tr>
-                <td>15507</td>
-                <td>Macro Economía</td>
-                <td>Nestor Garcia</td>
-                <td>2</td>
-                <td>
-                    <input type="checkbox" id="" name="" value="">
-                    <label for="vehicle1"></label>
-                </td>
+                </tr>
 
-            </tr>
+                <tr>
+                    <td><p>15508</p></td>
+                    <td><p>Estadística</p></td>
+                    <td><p>Aytell Ramos</p></td>
+                    <td><p>2</p></td>
+                    <td><p>
+                        <input type="checkbox" id="" name="" value="">
+                        <label for="vehicle1"></label>
+                    </p></td>
 
-            <tr>
-                <td>15508</td>
-                <td>Estadística</td>
-                <td>Aytell Ramos</td>
-                <td>2</td>
-                <td>
-                    <input type="checkbox" id="" name="" value="">
-                    <label for="vehicle1"></label>
-                </td>
+                </tr>
 
-            </tr>
+                <tr>
+                    <td><p>15509</p></td>
+                    <td><p>Finazas 1</p></td>
+                    <td><p>Andrew Echavarria</p></td>
+                    <td><p>2</p></td>
+                    <td><p>
+                        <input type="checkbox" id="" name="" value="">
+                        <label for="vehicle1"></label>
+                    </p></td>
 
-            <tr>
-                <td>15509</td>
-                <td>Finazas 1</td>
-                <td>Andrew Echavarria</td>
-                <td>2</td>
-                <td>
-                    <input type="checkbox" id="" name="" value="">
-                    <label for="vehicle1"></label>
-                </td>
+                </tr>
 
-            </tr>
-        </table>
+            </table>
 
-        <div>
             <input type="submit" value="Matricular" onclick="return matricular()">
         </div>
-	</section>
+
+        
+            
+        
+
+	</div>
+
 	
 	<footer>
-		<img src="images\Banner.png" alt="Pie de pagina">
-	</footer>
+        <!-- <img src="images\Banner.png" alt="Pie de pagina"> -->
+        <div class="contenedorFooter">
+            <div class="contenedorFooter__banner">
+                <nav class="navegacion-footer">
+                    <a href="index.html">Inicio</a>
+                    <a href="contacto.html">Contáctanos</a>
+                    <a href="loginPAge.html">Log out</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
 </body>
