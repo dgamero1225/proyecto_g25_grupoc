@@ -37,7 +37,7 @@ html * {
 
 /** Header **/
 .contenedorHeader {	
-	background-image: url(/images/banner.jpeg);
+	background-image: url(../images/banner.jpeg);
 	height: 320px;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -220,7 +220,7 @@ p{
 /** Footer **/
 .contenedorFooter {
 	margin-top: 20px;
-	background-image: url(/images/banner.jpeg);
+	background-image: url(../images/banner.jpeg);
 	height: 150px;
 	background-size: cover;
 	background-repeat: no-repeat;
