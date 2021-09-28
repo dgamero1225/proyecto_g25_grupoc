@@ -37,7 +37,7 @@ html * {
 
 /** Header **/
 .contenedorHeader {	
-	background-image: url(/images/banner.jpeg);
+	background-image: url(../images/banner.jpeg);
 	height: 320px;
 	background-size: cover;
 	background-repeat: no-repeat;
