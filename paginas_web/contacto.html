@@ -21,7 +21,7 @@ body {
 /** Header **/
 .contenedorHeader {
 	
-	background-image: url(/images/banner.jpeg);
+	background-image: url(./images/banner.jpeg);
 	height: 280px;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -70,13 +70,20 @@ body {
         * {
             box-sizing: border-box;
         }
+
+        .formulario__contenedor {
+            width: 300px;
+            margin: 0 auto;
+            display: grid;
+
+        }
         
-        form {
+        .formulario {
             width: 300px;
             padding: 16px;
             border-radius: 10px;
             margin: auto;
-            background-color: #ccc;
+            background-color:#E5E0DC;
         }
         
         form label {
@@ -97,14 +104,16 @@ body {
         }
         
         form input[type="submit"] {
-            width: 100%;
+            
             padding: 8px 16px;
             margin-top: 32px;
-            border: 1px solid #000;
+            border: none;
             border-radius: 5px;
             display: block;
-            color: #fff;
-            background-color: #000;
+            color: #206A64;
+            text-transform: uppercase;
+            background-color: #E5E0DC;
+
         }
         
         form input[type="submit"]:hover {
@@ -135,29 +144,12 @@ body {
             margin-top: 30px;
             margin-bottom: 20px;
         }
-        .formulario__boton {
-	margin-top: 2rem;
-	display: flex;
-	justify-content: center;
-}
-.boton__enviar {
-	width:fit-content;
-	height: fit-content;
-	border-radius: 0.5rem;
-	background-color:#E5E0DC;
-	text-decoration: none;
-	color: #206A64;
-	font-weight: bold;
-	text-transform: uppercase;
-	padding: 1rem;
-	align-items: center;
-	margin-left: 200px;
-}
+
 
     /** Footer **/
     .contenedorFooter {
     margin-top: 20px;
-    background-image: url(/images/banner.jpeg);
+    background-image: url(./images/banner.jpeg);
     height: 100px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -215,25 +207,25 @@ body {
 
             <section>
                 <h2 id="divTitulo"> Formulario de Contacto</h2>
-                <form action="#" target="" method="get" name="formDatosPersonales">
-
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" />
-
-                    <label for="apellidos">Apellidos</label>
-                    <input type="text" name="apellidos" id="apellidos" placeholder="1r Apellido" />
-
-                    <label for="email" />Email</label>
-                    <input type="email" name="email" id="email" placeholder="email" required />
-
-                    <label for="mensaje">Comentarios</label>
-                    <textarea name="mensaje" for="mensaje" placeholder="describe brevemente en menos de 300 carácteres" maxlength="300"></textarea>
-
-                    <!-- <input type="submit" name="enviar" value="enviar datos" /> -->
+                <form class="formulario__contenedor" action="#" target="" method="get" name="formDatosPersonales">
+                    <div class="formulario">       
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" />
+    
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" name="apellidos" id="apellidos" placeholder="1r Apellido" />
+    
+                        <label for="email" />Email</label>
+                        <input type="email" name="email" id="email" placeholder="email" required />
+    
+                        <label for="mensaje">Comentarios</label>
+                        <textarea name="mensaje" for="mensaje" placeholder="describe brevemente en menos de 300 carácteres" maxlength="300"></textarea>
+                    </div>
+                    <div>
+                         <input type="submit" name="enviar" value="enviar datos" />
+                    </div>
                 </form>
-                <div class="formulario__boton">
-                    <a class="boton__enviar" href="#">Enviar</a>
-                </div>
+
 
                 <footer>
                     <!-- <img src="images\Banner.png" alt="Pie de pagina"> -->

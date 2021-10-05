@@ -46,7 +46,7 @@
 		/** Header **/
 		.contenedorHeader {
 			
-			background-image: url(/images/banner.jpeg);
+			background-image: url(./images/banner.jpeg);
 			height: 280px;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -97,7 +97,7 @@
             display: grid;
             grid-template-columns: 1fr 3fr;
             font-size: 4rem;
-            height: 70rem;
+            height: 55rem;
         }
         /** Aside **/
         .menu_lateral {
@@ -176,6 +176,19 @@
             justify-content: space-evenly;
             height:min-content;
         }
+        .boton_buscar {
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+            background-color: #C4C4C4;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .boton_buscar:hover {
+            cursor: pointer;
+        }
         .ventana_cursos__cuerpo-fondo {
             background-color: white;
             width: 96%;
@@ -197,7 +210,7 @@
 
         /** Footer **/
 		.contenedorFooter {
-			background-image: url(/images/banner.jpeg);
+			background-image: url(./images/banner.jpeg);
 			height: 100px;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -262,11 +275,11 @@
         </aside>
         <section class="ventana_cursos">
             <div class="ventana_cursos__cabecera">
-                <form class="ventana_cursos__cabecera-buscar" action="">
+                <!-- <form class="ventana_cursos__cabecera-buscar" action="">
                     <label for="buscar">Buscar</label>
                     <input type="text" name="buscar" id="buscar" required> 
                     <input type="submit" value="Buscar" onclick="return buscar()"> 
-                </form>
+                </form> -->
             </div>
 
 
@@ -275,30 +288,27 @@
                 <div class="ventana_cursos__seleccionadores">
                     <div>
                         <label for="Año">Año</label>
-                        <select name="Año" id="Año">
-                            <option value="a">2010</option>
-                            <option value="a">2011</option>
-                            <option value="a">2012</option>
-                            <option value="a">2013</option>
-                            <option value="a">2014</option>
-                            <option value="a">2015</option>
+                        <select name="year" id="select_year">
+                            
                         </select>
                     </div>
 
                     <div>
-                        <label for="periodo">Period</label>
-                        <select name="periodo" id="periodo">
-                            <option value="a">1</option>
-                            <option value="a">2</option>
+                        <label for="semestre">Semestre</label>
+                        <select name="semester" id="select_semester">
                 
                         </select>
+                    </div>
+
+                    <div>
+                        <a class="boton_buscar" href="#" onclick="procesarDatos()">buscar</a>
                     </div>
             
 
                 </div>
 
                 <div class="ventana_cursos__cuerpo-fondo">
-                    <table class="ventana_cursos__cuerpo-tabla">
+                    <table class="ventana_cursos__cuerpo-tabla" id="tabla">
                         <tr>
                             <td class="leyenda">Código</td>
                             <td class="leyenda">Asignatura</td>
@@ -308,7 +318,7 @@
                             <td class="leyenda">3er</td>
                             <td class="leyenda">Final</td>
                         </tr>
-            
+<!--             
                         <tr>
                             <td>15501</td>
                             <td>Macro Economía</td>
@@ -337,7 +347,7 @@
                             <td>5.0</td>
                             <td>4.4</td>
                             <td>4.2</td>
-                        </tr>
+                        </tr> -->
                     </table>
                 </div>
 
@@ -358,4 +368,5 @@
 			</div>
 		</div>
 	</footer>
+    <script src="scripts/calificaciones.js"></script>
 </body>
