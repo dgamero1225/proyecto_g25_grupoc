@@ -200,7 +200,10 @@
             
         }
         .ventana_cursos__cuerpo-tabla td,
-        .ventana_cursos__cuerpo-tabla tr{
+        .ventana_cursos__cuerpo-tabla tr {
+            font-size: 1.2rem;
+        }
+        .ventana_cursos__cuerpo-tabla th {
             font-size: 1.2rem;
         }
         .leyenda {
@@ -266,7 +269,7 @@
             <div class="menu_lateral__opciones">
                 <a href="informacionPersonal.html">Información Personal</a>
                 <a href="registrarCursos">Registrar Cursos</a>
-                <a href="verCursos">Ver mis Cursos</a>
+                <a href="calificaciones.html">Ver Calificaciones</a>
             </div>
             <div class="menu_lateral__logout">
                 <a href="index.html">Log Out</a>
@@ -308,17 +311,22 @@
                 </div>
 
                 <div class="ventana_cursos__cuerpo-fondo">
-                    <table class="ventana_cursos__cuerpo-tabla" id="tabla">
-                        <tr>
-                            <td class="leyenda">Código</td>
-                            <td class="leyenda">Asignatura</td>
-                            <td class="leyenda">Crd</td>
-                            <td class="leyenda">1er</td>
-                            <td class="leyenda">2do</td>
-                            <td class="leyenda">3er</td>
-                            <td class="leyenda">Final</td>
-                        </tr>
-<!--             
+                    <table border="1" class="ventana_cursos__cuerpo-tabla" >
+                        <thead >
+                            <tr>
+                                <th>Código</th>
+                                <th>Asignatura</th>
+                                <th>Crd</th>
+                                <th>1er</th>
+                                <th>2do</th>
+                                <th>3er</th>
+                                <th>Final</th>
+                            </tr>
+                        </thead >
+                        <tbody id="tabla">
+
+                        </tbody>
+<!--                    
                         <tr>
                             <td>15501</td>
                             <td>Macro Economía</td>
