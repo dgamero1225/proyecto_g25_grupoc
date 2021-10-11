@@ -8,7 +8,7 @@
 
 </head>
 
-<body>
+<body onload="cargarCursos();">
 	<header class="contenedorHeader">
         <img class="contenedorHeader__imgLogo" src="images/Logo.png" alt="">
         <div class="contenedorHeader__banner">
@@ -29,9 +29,9 @@
     <aside class="menu__lateral">
         <h2>Menú</h2>
         <ul>
-            <li><a href="informacionPersonal.html">Información Personal</a></li>
-            <li><a href="registrarCursos">Registrar Cursos</a></li>
-            <li><a href="verCursos">Ver mis Cursos</a></li>
+            <li><a href="infoEstudiante.html">Información Personal</a></li>
+            <li><a href="registrarCursos.html">Registrar Cursos</a></li>
+            <li><a href="calificaciones.html">Calificaciones</a></li>
         </ul>
 
         <a class="log_barraLat" href="index.html">Log Out</a>
@@ -46,7 +46,8 @@
                 <p><input type="text" name="buscar" id="buscar" required></p> 
 
                 <div>
-    				<p><input type="submit" value="Buscar" onclick="return buscar()"></p> 
+    				<p><input type="submit" value="Buscar" onclick="buscarCurso()"></p> 
+                    <p><input type="submit" value="Limpiar" onclick="limpiarBuscar()"></p> 
     			</div>
             </form>
         </div>
@@ -56,16 +57,25 @@
             <h3>Cursos disponibles</h3>
 
             <table>
-                <tr>
-                    <h3>
-                    <td><strong><p>CODIGO</p></strong></td>
-                    <td><strong><p>ASIGNATURA</p></strong></td>
-                    <td><strong><p>DOCENTE</p></strong></td>
-                    <td><strong><p>CRD</p></strong></td>
-                    <td><strong><p>SELECCIONAR</p></strong></td>
+                <thead>
+                    <tr>
+                        <h3>
+                            <td><strong><p>CODIGO</p></strong></td>
+                            <td><strong><p>ASIGNATURA</p></strong></td>
+                            <td><strong><p>DOCENTE</p></strong></td>
+                            <td><strong><p>CREDITOS</p></strong></td>
+                            <td><strong><p>SELECCIONAR</p></strong></td>
+                            
+                        </h3>
 
-                </tr>
+                    </tr>
+                </thead>
 
+                <tbody id="tabla_cursos">
+                    
+                </tbody>
+            </table>
+<!--
                 <tr>
                     <td><p>15507</p></td>
                     <td><p>Macro Economía</p></td>
@@ -102,9 +112,9 @@
 
                 </tr>
 
-            </table>
+            </table> -->
 
-            <input type="submit" value="Matricular" onclick="return matricular()">
+            <input type="submit" value="Matricular" onclick="matricular()">
         </div>
 
         
@@ -124,4 +134,5 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/registrarCursos.js"></script>
 </body>
