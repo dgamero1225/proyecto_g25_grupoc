@@ -9,6 +9,7 @@
 <link href="css/infoEstudiante.css" rel="stylesheet" type="text/css">
 <!--Importando font-family (Estilo de letra) a la pagina, desde google-->
 <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
 </head>
 
 <body>
@@ -133,11 +134,13 @@
 					</div>
 				</div>
 				
-				<input type="submit" value="Modificar" onclick="return EnviarInfoEstudiante()">
+				<button type="button" class="proInfo" id="modificarInfo" onclick="modificarInfoEstudiante()">Modificar</button>
+				<button type="button" class="proInfo" id="actualizarInfo" onclick="actualizarInfoEstudiante(tKey)">Guardar</button>
 			</form>
 		</section>
 	</div>
 	
 	<footer>
 	</footer>
+	<script src="scripts/infoEstudiante.js"></script>	
 </body>
