@@ -197,13 +197,13 @@
 		<div class="contenedor__formulario">
 			<form class="formulario">
 				<div class="formulario__datos">
-					<label class="formulario__label" for="EntradaUsuario">Usuario</label>
-					<input class="formulario__input" type="text" placeholder="Entra tu nombre" name="EntradaUsuario" id="EntradaUsuario" required>
+					<label class="formulario__label" for="cedulaUsuario">C.C. Usuario</label>
+					<input class="formulario__input" type="number" placeholder="Entra tu cédula" name="cedulaUsuario" id="cedulaUsuario" required>
 					<label class="formulario__label" for="EntradaContraseña">Contraseña</label>
-					<input class="formulario__input" type="password" placeholder="Entra tu password" name="EntradaContraseña" id="EntradaContraseña" required>
+				<input class="formulario__input" type="password" placeholder="entradaPassword" name="entradaPassword" id="entradaPassword" required>
 				</div>
 				<div class="ingresar">
-					<input type="submit" name="ingresar" value="Ingresar">
+					<input type="submit" name="ingresar" value="Ingresar" onclick="procesarDatos()">
 				</div>
 			</form>
 
@@ -224,4 +224,5 @@
 			</div>
 		</div>
 	</footer>
+	<script src="scripts/loginPage.js"></script>
 </body>
