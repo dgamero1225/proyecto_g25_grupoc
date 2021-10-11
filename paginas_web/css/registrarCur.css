@@ -209,6 +209,22 @@ p{
    background: #ffffff;
 }
 
+.tabla_cursos {
+	margin-right: 10px;
+	margin-left: 10px;
+	border: 1px solid #000;
+	color:  #142727 ;
+	margin-bottom: 20px;
+}
+
+.tabla_cursos th, td {
+   width: 25%;
+   text-align: center;
+   border: 1px solid #000;
+   border-collapse: collapse;
+   background: #ffffff;
+}
+
 
 .matricular{
 	vertical-align: middle;
