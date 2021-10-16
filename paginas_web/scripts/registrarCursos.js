@@ -121,7 +121,7 @@ const buscarCurso = () =>{ //Buscador de curso
 
 const matricular = () =>{
     num_cursos = 0;
-    var compCreditos = creditosTotales; //Inicial es 0, pero después por los que ya tengamos
+    var compCreditos = 0; //Inicial es 0, pero después por los que ya tengamos
     var materiasTemp = [];
 
     for (let lct of cursos[year]) { //Miramos cuáles checkbox se marcaron
@@ -136,32 +136,31 @@ const matricular = () =>{
         }
     }
 
-    if(compCreditos <= maxCreditos && compCreditos > 0){ //Agregar materias
+    if(compCreditos != 0){ //Agregar materias
+        if((compCreditos+creditosTotales)<=maxCreditos){
+            //Agregamos al array de cursos ya registrados
+            for(let jlct of materiasTemp){
+                materiasInscritas.push(jlct); //Agregamos el código de la materia a la lista de cursos vistos
+                console.log(jlct);
+            }
 
-        //Agregamos al array de cursos ya registrados
-        for(let jlct of materiasTemp){
-            materiasInscritas.push(jlct); //Agregamos el código de la materia a la lista de cursos vistos
-            console.log(jlct);
+            //Cambiamos el total de creditos inscritos
+            creditosTotales += compCreditos;
+
+            //Reset de los checkbox a sin marcar
+            num_cursos = 0;
+            for (let lec of cursos[year]) {
+                num_cursos++;
+                dict[num_cursos+''] = false;
+            }
+
+            let credDisp = maxCreditos-creditosTotales;
+            alert("Materias inscritas satisfactoriamente. \nTotal créditos inscritos: " + creditosTotales + "\nCréditos disponibles: " + credDisp);
+        }else{
+            alert("Usted excede el número máximo de créditos permitidos. " + (compCreditos+creditosTotales) + " de " + maxCreditos + ". \nActualmente tiene inscritos " + creditosTotales + " créditos.");
         }
-
-        //Cambiamos el total de creditos inscritos
-        creditosTotales = compCreditos;
-
-        //Reset de los checkbox a sin marcar
-        num_cursos = 0;
-        for (let lec of cursos[year]) {
-            num_cursos++;
-            dict[num_cursos+''] = false;
-        }
-
-        let credDisp = maxCreditos-creditosTotales;
-
-        alert("Materias inscritas satisfactoriamente. \nTotal créditos inscritos: " + creditosTotales + "\nCréditos disponibles: " + credDisp);
-    }else if(compCreditos === 0){
+    }else{
         alert("Aún no ha seleccionado materias...\nTiene disponible " + credDisp + " créditos." );
-    }
-    else{
-        alert("Usted excede el número máximo de créditos permitidos. " + compCreditos + " de " + maxCreditos + ". \nActualmente tiene inscritos " + creditosTotales + " créditos.");
     }
 
     cargarCursos(); //
