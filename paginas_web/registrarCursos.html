@@ -19,7 +19,7 @@
                     <a href="loginPAge.html">Log out</a>
                 </nav>
     
-                <h1 id="titulo">Universidad de las Tecnologias TIC</h1>
+                <h2 id="titulo" class="tituloU">Universidad de las Tecnologias TIC</h2>
             </div>
 
         </div>
@@ -39,22 +39,24 @@
 	
 	<div class="contenedor__contenido">
         <h3>REGISTRAR CURSOS</h3>
-        <div class="buscador">
-            <form action="">
-                <br>
-                <label for="buscar"><p>Buscar curso</p></label>
-                <p><input type="text" name="buscar" id="buscar" required></p> 
-
-                <div>
-    				<p><input type="submit" value="Buscar" onclick="buscarCurso()"></p> 
-                    <p><input type="submit" value="Limpiar" onclick="limpiarBuscar()"></p> 
-    			</div>
-            </form>
-        </div>
+        
 
         
         <div class="cursos_disp">
             <h3>Cursos disponibles</h3>
+            
+            <div class="buscador">
+                <form action="">
+                    <br>
+                    <label for="buscar"><p>Buscar curso</p></label>
+                    <p><input type="text" name="buscar" id="buscar" required></p> 
+    
+                    <div>
+                        <p><input type="submit" value="Buscar" onclick="buscarCurso()"></p> 
+                        <p><input type="submit" value="Limpiar" onclick="limpiarBuscar()"></p> 
+                    </div>
+                </form>
+            </div>
 
             <table>
                 <thead>
@@ -69,6 +71,7 @@
                         </h3>
 
                     </tr>
+                    
                 </thead>
 
                 <tbody id="tabla_cursos">
