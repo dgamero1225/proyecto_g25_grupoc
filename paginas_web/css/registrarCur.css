@@ -7,12 +7,12 @@ html * {
 		}
 
 		body {
-			max-width: 1920px;
+			max-width: 1024px;
 			font-size: 16px;
 		}
 
 		h1 {
-			font-size: 4.0rem;
+			font-size: 3.0rem;
 		}
 
 		h2 {
@@ -38,20 +38,20 @@ html * {
 /** Header **/
 .contenedorHeader {	
 	background-image: url(../images/banner.jpeg);
-	height: 320px;
+	height: 220px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 	display: grid;
-	grid-template-columns: 320px 1600px;
+	grid-template-columns: 220px 804px;
 
 	
 }
 
 .contenedorHeader__imgLogo {
 	padding-bottom: 20px;
-	height: 320px;
-	width: 320px;
+	height: 220px;
+	width: 220px;
 }
 
 .contenedorHeader__banner {
@@ -66,16 +66,23 @@ html * {
 	height: 100%;
 }
 
+.tituloU{
+	color: #F4FCFC;
+	width: 80%;
+	text-align: center;
+}
+
 
 .contenedorHeader__banner h1 {
 	text-align: center;
 	margin-top: 150px;
-	color: white;
+	color: F4FCFC;
 	
 }
 .contenedorHeader__navegacion {
 	display: flex;
 	gap: 2rem;
+	color: #F4FCFC;
 	justify-content: right;
 	margin-top: 50px;
 	margin-right: 50px;
@@ -84,7 +91,8 @@ html * {
 }
 .contenedorHeader__navegacion a {
 	
-	color: white;
+	color: #F4FCFC;
+	font-size: small;
 	text-decoration: none;
 }
 
@@ -103,10 +111,10 @@ body{
 	
     float: left;
     color: #142727;
-    width: 16.8%;
-    height: 620px;
+    width: 21.5%;
+    height: 1024px;
     background-color: #9c9f9d;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .menu__lateral h2{
@@ -116,10 +124,14 @@ body{
 	padding-top: 10px;
 }
 
+.menu__lateral a{
+	font-size: large;
+}
+
 .log_barraLat {
 	font-size: small;
 	float: right;
-	margin-top: 315px;
+	margin-top: 750px;
 	text-decoration: none;
 	color:  #142727 ;
 	margin-right: 30px;
@@ -159,12 +171,11 @@ p{
 
 .contenedor__contenido{
 	margin-top: 20px;
-	margin-left: 100px;
-	margin-right: 100px;
+	margin-left: 50px;
     color: #142727;
     display: inline-block;
-    height: 600px;
-    width: 72%;
+    height: 1024px;
+    width: 65%;
     background-color: #e5e0dc;
     text-align: center;
     font-size: 30px;
@@ -173,18 +184,24 @@ p{
 }
 
 .buscador{
-    float: right;
-    margin-right: 20px;
-    width: 10%;
+	float: right;
+	text-align: left;
+    margin-right: 10px;
+	margin-bottom: 10px;
+    width: 20%;
     
+}
+
+.buscador p{
+	font-size: medium;
 }
 
 .cursos_disp{
 	padding-top: 20px;
 	margin-top: 30px;
-	margin-left: 70px;
-    height: 60%;
-    width: 80%;
+	margin-left: 30px;
+    height: 85%;
+    width: 90%;
     color: #e5e0dc;
     background-color: rgba(30, 33, 32, 0.68);
 }
@@ -202,7 +219,7 @@ p{
 }
 
 .cursos_disp th, td {
-   width: 25%;
+   width: 20%;
    text-align: center;
    border: 1px solid #000;
    border-collapse: collapse;
